@@ -1,7 +1,7 @@
 fcitx-table-cangjie5-colemak
 ==============================
 
-Fcitx Cangjie5 code table for colemak layout.
+Fcitx Cangjie5 code table for Colemak layout.
 
 Remapped Fcitx's Cangjie5 code table from Qwerty to Colemak.
 
