@@ -8,7 +8,7 @@ Remapped Fcitx's Cangjie5 code table from Qwerty to Colemak.
 Usage
 ==============================
 
-Put `table/cangjie5-colemak.conf` and `table/cangjie5-colemak.mb` to your Fcitx table directory. On Arch Linux it is `/usr/share/fcitx/table/`.
+Put ``table/cangjie5-colemak.conf`` and ``table/cangjie5-colemak.mb`` to your Fcitx table directory. On Arch Linux it is ``/usr/share/fcitx/table/``.
 
 You may want to write a little package for your system to keep things clean.
 
@@ -26,7 +26,7 @@ This code table is directly made from Fcitx's Cangjie5 code table. Follow these 
 
 .. code:: bash
 
-    # copy Fcitx's `cangjie5.mb` and `cangjie5.conf` to whatever directory.
+    # copy Fcitx's ``cangjie5.mb`` and `cangjie5.conf` to whatever directory.
     cp /usr/share/fcitx/table/cangjie5.{conf,mb} WHATEVER_DIRECTORY/
     cd WHATEVER_DIRECTORY/
 
@@ -35,14 +35,14 @@ This code table is directly made from Fcitx's Cangjie5 code table. Follow these 
 
     # convert code table
     convert-qwerty-to-colemak.js cangjie5.txt
-    # now we get `cangjie5-colemak.txt`
+    # now we get ``cangjie5-colemak.txt``
 
     # rename .conf file,
-    # adjust it's `UniqueName`, `Name` and `File` sections
+    # adjust it's ``UniqueName``, ``Name`` and ``File`` sections
     # to appropriate values.
     mv cangjie5.conf cangjie5-colemak.conf
 
-    # now `cangjie5-colemak.mb` and `cangjie5-colemak.conf` are our converted table.
+    # now ``cangjie5-colemak.mb`` and ``cangjie5-colemak.conf`` are our converted table.
 
 License
 ==============================
