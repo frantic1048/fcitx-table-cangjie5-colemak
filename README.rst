@@ -5,12 +5,28 @@ Fcitx Cangjie5 code table for Colemak layout.
 
 Remapped Fcitx's Cangjie5 code table from Qwerty to Colemak.
 
-Usage
+.. image:: https://i.imgur.com/j5MRsvX.png
+
+Get vector diagram: http://frantle.deviantart.com/art/Cangjie5-diagram-for-Colemak-layout-649013748
+
+Install
 ==============================
 
 Put ``table/cangjie5-colemak.conf`` and ``table/cangjie5-colemak.mb`` to your Fcitx table directory. On Arch Linux it is ``/usr/share/fcitx/table/``.
 
 You may want to write a little package for your system to keep things clean.
+
+Arch Linux
+--------------
+
+For Arch Linux users, just install ``fcitx-table-cangjie5-colemak`` from AUR:
+
+https://aur.archlinux.org/packages/fcitx-table-cangjie5-colemak/
+
+Usage
+==============================
+
+Activate ``Cangjie5-colemak`` input method on Fcitx and it's ready for you.
 
 Why
 ==============================
@@ -31,11 +47,14 @@ This code table is directly made from Fcitx's Cangjie5 code table. Follow these 
     cd WHATEVER_DIRECTORY/
 
     # get a text version code table.
-    mb2txt cangjie5.mb cangjie5.txt
+    mb2txt cangjie5.mb >cangjie5.txt
 
     # convert code table
     convert-qwerty-to-colemak.js cangjie5.txt
     # now we get ``cangjie5-colemak.txt``
+
+    # convert new table back to .mb
+    txt2mb cangjie5-colemak.txt cangjie5-colemak.mb
 
     # rename .conf file,
     # adjust it's ``UniqueName``, ``Name`` and ``File`` sections
